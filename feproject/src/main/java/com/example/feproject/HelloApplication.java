@@ -1,5 +1,6 @@
 package com.example.feproject;
 
+import com.example.feproject.inventory.Item;
 import com.example.feproject.map.SquareTile;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +19,32 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();*/
 
-        SquareTile tile = new SquareTile();
+
+        Item i1 = new Item();
+
+        Item i2 = new Item();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*SquareTile tile = new SquareTile();
 
         GridPane grid = new GridPane();
         grid.add(tile.getMesh(), 0, 0);
@@ -27,6 +53,6 @@ public class HelloApplication extends Application {
 
         stage.setScene(scene);
         stage.setTitle("Version 1.0.0");
-        stage.show();
+        stage.show();*/
     }
 }
