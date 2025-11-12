@@ -1,0 +1,61 @@
+package com.example.feproject.map;
+
+import javafx.scene.shape.Rectangle;
+
+public class SquareTile implements Tile {
+
+    private Rectangle mesh;
+    private SquareTile[] neighbors;
+    private int neighborNum = -1, mov, tileSize;
+
+    private int[] xy; // id of Tile
+
+    public SquareTile() {
+        neighbors = new SquareTile[4];
+        tileSize = 16;
+        mesh = new Rectangle(tileSize, tileSize);
+        xy = new int[2];
+    }
+
+    public SquareTile(int mov, int tileSize, int x, int y) {
+        mesh = new Rectangle();
+        mesh.setHeight(tileSize);
+        mesh.setWidth(tileSize);
+
+        this.tileSize = tileSize;
+
+        xy = new int[2];
+        xy[0] = x;
+        xy[1] = y;
+
+        neighbors = new SquareTile[4];
+    }
+
+    public void setNeighborhood() {
+        
+    }
+
+    @Override
+    public Tile getNeighborByIndex(int index) {
+        return null;
+    }
+
+    @Override
+    public void removeNeighborByIndex(int index) {
+
+    }
+
+    @Override
+    public int getMov() {
+        return 0;
+    }
+
+    @Override
+    public void setMov(int mov) {
+
+    }
+
+    public Rectangle getMesh() {
+        return mesh;
+    }
+}
