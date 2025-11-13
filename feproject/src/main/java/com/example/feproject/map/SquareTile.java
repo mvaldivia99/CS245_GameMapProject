@@ -58,4 +58,9 @@ public class SquareTile implements Tile {
     public Rectangle getMesh() {
         return mesh;
     }
+
+    public void setXY(int x, int y) {
+        this.xy[0] = x;
+        this.xy[1] = y;
+    }
 }
