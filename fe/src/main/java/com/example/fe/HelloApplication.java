@@ -1,5 +1,6 @@
 package com.example.fe;
 
+import com.example.fe.inventory.Item;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,10 +11,26 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        /*FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
-        stage.show();
+        stage.show();*/
+
+
+        Item i1 = new Item();
+
+        Item i2 = new Item();
+
+        /*SquareTile tile = new SquareTile();
+
+        GridPane grid = new GridPane();
+        grid.add(tile.getMesh(), 0, 0);
+
+        Scene scene = new Scene(grid, 500, 500);
+
+        stage.setScene(scene);
+        stage.setTitle("Version 1.0.0");
+        stage.show();*/
     }
 }
