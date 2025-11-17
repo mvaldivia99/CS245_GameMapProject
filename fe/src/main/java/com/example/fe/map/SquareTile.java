@@ -1,4 +1,4 @@
-package com.example.feproject.map;
+package com.example.fe.map;
 
 import javafx.scene.shape.Rectangle;
 
@@ -35,6 +35,16 @@ public class SquareTile implements Tile {
         
     }
 
+    public void addNeighbor(SquareTile t) {
+        if (neighborNum < 3){
+            neighbors[++neighborNum] = t;
+        } else {
+            System.out.println("Error: cannot add new neighbor");
+        }
+
+    }
+
+
     @Override
     public Tile getNeighborByIndex(int index) {
         return null;
@@ -62,5 +72,10 @@ public class SquareTile implements Tile {
     public void setXY(int x, int y) {
         this.xy[0] = x;
         this.xy[1] = y;
+    }
+
+
+    public int[] getXY(){
+        return this.xy;
     }
 }

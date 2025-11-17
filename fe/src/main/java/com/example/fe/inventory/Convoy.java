@@ -1,8 +1,6 @@
-package com.example.feproject.inventory;
+package com.example.fe.inventory;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 /*
 *

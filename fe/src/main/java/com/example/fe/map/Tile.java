@@ -1,4 +1,4 @@
-package com.example.feproject.map;
+package com.example.fe.map;
 
 public interface Tile {
     /*
@@ -13,4 +13,6 @@ public interface Tile {
 
     int getMov();
     void setMov(int mov);
+
+
 }

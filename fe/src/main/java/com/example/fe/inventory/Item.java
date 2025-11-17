@@ -1,4 +1,4 @@
-package com.example.feproject.inventory;
+package com.example.fe.inventory;
 
 /*
 * Item is a game object that can be held by a game unit

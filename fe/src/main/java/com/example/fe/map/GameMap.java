@@ -1,4 +1,4 @@
-package com.example.feproject.map;
+package com.example.fe.map;
 
 import javafx.scene.layout.GridPane;
 
@@ -70,20 +70,18 @@ public class GameMap {
 
 
         // confirm adjacency lists
-        for (int i = 0; i < grid_a.size(); i++) {
+        /*for (int i = 0; i < grid_a.size(); i++) {
             for (int j = 0; j < grid_a.get(i).size(); j++) {
                 String nodeID = String.format("(%d, %d)", grid_a.get(i).get(j).getXY()[0], grid_a.get(i).get(0).getXY()[1]);
                 System.out.print(nodeID + "->");
 
                 for (int k = 0; k < 4; k++) {
-                    String neighbor = String.format(" (%d, %d),", grid_a.get(i).get(j).getNeighborByIndex(k).getXY()[0],
-                            grid_a.get(i).get(j).getNeighborByIndex(k).getXY()[1]);
-                    System.out.print(neighbor);
+                    String neighbor = String.format(" (%d, %d),", grid_a.get(i).get(j).getNeighborByIndex(k))
                 }
 
                 System.out.println();
             }
-        }
+        }*/
     }
 
     public GridPane getGrid(){
