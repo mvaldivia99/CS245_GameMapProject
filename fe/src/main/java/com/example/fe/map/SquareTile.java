@@ -1,5 +1,6 @@
 package com.example.fe.map;
 
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 public class SquareTile implements Tile {
@@ -15,6 +16,9 @@ public class SquareTile implements Tile {
         tileSize = 16;
         mesh = new Rectangle(tileSize, tileSize);
         xy = new int[2];
+        // set rectangle color properties
+        mesh.setStroke(Color.gray(.5));
+        mesh.setStrokeWidth(3);
     }
 
     public SquareTile(int mov, int tileSize, int x, int y) {
@@ -28,7 +32,12 @@ public class SquareTile implements Tile {
         xy[0] = x;
         xy[1] = y;
 
+        // set rectangle color properties
+        mesh.setStroke(Color.gray(.5));
+        mesh.setStrokeWidth(3);
+
         neighbors = new SquareTile[4];
+
     }
 
     public void setNeighborhood() {

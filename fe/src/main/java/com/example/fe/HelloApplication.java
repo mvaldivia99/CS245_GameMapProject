@@ -1,9 +1,12 @@
 package com.example.fe;
 
 import com.example.fe.inventory.Item;
+import com.example.fe.map.GameMap;
+import com.example.fe.map.SquareTile;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,19 +21,21 @@ public class HelloApplication extends Application {
         stage.show();*/
 
 
-        Item i1 = new Item();
+        //Item i1 = new Item();
 
-        Item i2 = new Item();
+        //Item i2 = new Item();
 
         /*SquareTile tile = new SquareTile();
 
         GridPane grid = new GridPane();
-        grid.add(tile.getMesh(), 0, 0);
+        grid.add(tile.getMesh(), 32, 32);*/
 
-        Scene scene = new Scene(grid, 500, 500);
+        GameMap a = new GameMap(15, 15, 32);
+        a.populateMap();
+        Scene scene = new Scene(a.getGrid(), 500, 500);
 
         stage.setScene(scene);
         stage.setTitle("Version 1.0.0");
-        stage.show();*/
+        stage.show();
     }
 }

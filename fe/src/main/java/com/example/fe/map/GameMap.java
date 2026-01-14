@@ -23,8 +23,8 @@ public class GameMap {
             grid_a.add(new ArrayList<SquareTile>());
 
             for (int j = 0; j < n * tileSize; j += tileSize) {
-                SquareTile t0 = new SquareTile();
-                t0.setXY(i / tileSize, j / tileSize);
+                SquareTile t0 = new SquareTile(0, tileSize, i / tileSize, j / tileSize);
+                //t0.setXY(i / tileSize, j / tileSize);
                 grid_a.get(i / tileSize).add(t0);
                 grid_p.add(grid_a.get(i / tileSize).getLast().getMesh(), i, j);
             }
